@@ -4,9 +4,10 @@
 }
 /* line 3, ../sass/custom.scss */
 #body-right p {
+  margin-top: 10px;
   border: 4px solid dodgerblue;
 }
-/* line 6, ../sass/custom.scss */
+/* line 8, ../sass/custom.scss */
 #body-right #image1b {
   background-image: url("../images/1b.jpeg");
   width: 180px;
@@ -14,14 +15,18 @@
   background-size: 100% 100%;
   background-blend-mode: screen;
 }
-/* line 13, ../sass/custom.scss */
-#body-right #text1b {
+/* line 14, ../sass/custom.scss */
+#body-right #image1b #text1b {
   color: white;
   font-size: 20px;
   text-align: center;
   padding: 10% 2%;
 }
-/* line 19, ../sass/custom.scss */
+/* line 20, ../sass/custom.scss */
+#body-right #image1b .text2b {
+  margin-top: 20px;
+}
+/* line 25, ../sass/custom.scss */
 #body-right #image1c {
   background-image: url("../images/1c.jpeg");
   width: 180px;
@@ -29,10 +34,14 @@
   background-size: 100% 100%;
   background-blend-mode: screen;
 }
-/* line 26, ../sass/custom.scss */
-#body-right #text1c {
+/* line 31, ../sass/custom.scss */
+#body-right #image1c #text1c {
   color: white;
   font-size: 20px;
   text-align: center;
   padding: 10% 2%;
+}
+/* line 37, ../sass/custom.scss */
+#body-right #image1c .text2c {
+  margin-top: 20px;
 }
