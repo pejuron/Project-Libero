@@ -1,0 +1,38 @@
+/* line 1, ../sass/custom.scss */
+#body-right {
+  display: inline-block;
+}
+/* line 3, ../sass/custom.scss */
+#body-right p {
+  border: 4px solid dodgerblue;
+}
+/* line 6, ../sass/custom.scss */
+#body-right #image1b {
+  background-image: url("../images/1b.jpeg");
+  width: 180px;
+  height: 100px;
+  background-size: 100% 100%;
+  background-blend-mode: screen;
+}
+/* line 13, ../sass/custom.scss */
+#body-right #text1b {
+  color: white;
+  font-size: 20px;
+  text-align: center;
+  padding: 10% 2%;
+}
+/* line 19, ../sass/custom.scss */
+#body-right #image1c {
+  background-image: url("../images/1c.jpeg");
+  width: 180px;
+  height: 100px;
+  background-size: 100% 100%;
+  background-blend-mode: screen;
+}
+/* line 26, ../sass/custom.scss */
+#body-right #text1c {
+  color: white;
+  font-size: 20px;
+  text-align: center;
+  padding: 10% 2%;
+}
