@@ -1,47 +1,71 @@
 /* line 1, ../sass/custom.scss */
 #body-right {
-  display: inline-block;
+  width: 40%;
+  font-family: Verdana;
 }
-/* line 3, ../sass/custom.scss */
-#body-right p {
-  margin-top: 10px;
+/* line 4, ../sass/custom.scss */
+#body-right #body-right-content {
+  float: right;
+}
+/* line 6, ../sass/custom.scss */
+#body-right #body-right-content h3 {
+  color: #0f0b85;
+  margin: auto;
+}
+/* line 10, ../sass/custom.scss */
+#body-right #body-right-content .blue-line {
+  margin: 5% 0%;
   border: 4px solid dodgerblue;
 }
-/* line 8, ../sass/custom.scss */
-#body-right #image1b {
-  background-image: url("../images/1b.jpeg");
-  width: 180px;
-  height: 100px;
-  background-size: 100% 100%;
-  background-blend-mode: screen;
-}
 /* line 14, ../sass/custom.scss */
-#body-right #image1b #text1b {
+#body-right #body-right-content .textInsideImage {
   color: white;
-  font-size: 20px;
   text-align: center;
-  padding: 10% 2%;
+  font-size: 200%;
+  position: absolute;
+  top: 20%;
+  padding: 0% 1%;
 }
-/* line 20, ../sass/custom.scss */
-#body-right #image1b .text2b {
-  margin-top: 20px;
-}
-/* line 25, ../sass/custom.scss */
-#body-right #image1c {
-  background-image: url("../images/1c.jpeg");
-  width: 180px;
-  height: 100px;
-  background-size: 100% 100%;
-  background-blend-mode: screen;
-}
-/* line 31, ../sass/custom.scss */
-#body-right #image1c #text1c {
+/* line 22, ../sass/custom.scss */
+#body-right #body-right-content .textReadMore {
+  position: absolute;
   color: white;
-  font-size: 20px;
-  text-align: center;
-  padding: 10% 2%;
+  width: 25%;
+  font-size: 80%;
+  bottom: 0;
+  left: 0;
+  background-color: #4d76ff;
+  margin: auto;
+  padding: 2% 5%;
 }
-/* line 37, ../sass/custom.scss */
-#body-right #image1c .text2c {
-  margin-top: 20px;
+/* line 33, ../sass/custom.scss */
+#body-right #body-right-content .textBelowImage {
+  color: #4b5cff;
+  font-size: 100%;
+  margin-top: 5%;
+}
+/* line 38, ../sass/custom.scss */
+#body-right #body-right-content .backOpacity {
+  position: absolute;
+  top: 0;
+  background-color: black;
+  height: 100%;
+  width: 100%;
+  opacity: 0.36;
+}
+/* line 46, ../sass/custom.scss */
+#body-right #body-right-content img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+/* line 51, ../sass/custom.scss */
+#body-right #body-right-content #image1b {
+  position: relative;
+  width: 100%;
+}
+/* line 55, ../sass/custom.scss */
+#body-right #body-right-content #image1c {
+  position: relative;
+  width: 100%;
 }
