@@ -1,71 +1,408 @@
-/* line 1, ../sass/custom.scss */
-#body-right {
-  width: 40%;
+/* line 11, ../sass/custom.scss */
+body {
   font-family: Verdana;
-}
-/* line 4, ../sass/custom.scss */
-#body-right #body-right-content {
-  float: right;
-}
-/* line 6, ../sass/custom.scss */
-#body-right #body-right-content h3 {
-  color: #0f0b85;
-  margin: auto;
-}
-/* line 10, ../sass/custom.scss */
-#body-right #body-right-content .blue-line {
-  margin: 5% 0%;
-  border: 4px solid dodgerblue;
+  /*************HEADER***************/
+  /*************MAIN WRAPPER***************/
 }
 /* line 14, ../sass/custom.scss */
-#body-right #body-right-content .textInsideImage {
-  color: white;
-  text-align: center;
-  font-size: 200%;
-  position: absolute;
-  top: 20%;
-  padding: 0% 1%;
-}
-/* line 22, ../sass/custom.scss */
-#body-right #body-right-content .textReadMore {
-  position: absolute;
-  color: white;
-  width: 25%;
-  font-size: 80%;
-  bottom: 0;
-  left: 0;
-  background-color: #4d76ff;
-  margin: auto;
-  padding: 2% 5%;
-}
-/* line 33, ../sass/custom.scss */
-#body-right #body-right-content .textBelowImage {
-  color: #4b5cff;
-  font-size: 100%;
-  margin-top: 5%;
-}
-/* line 38, ../sass/custom.scss */
-#body-right #body-right-content .backOpacity {
-  position: absolute;
-  top: 0;
-  background-color: black;
-  height: 100%;
+body header {
+  height: 120px;
   width: 100%;
-  opacity: 0.36;
+  background-color: #1a2c4d;
+}
+/* line 19, ../sass/custom.scss */
+body header #logo {
+  height: 100%;
+  width: 420px;
+  float: left;
+  display: inline;
+}
+/* line 25, ../sass/custom.scss */
+body header #logo img:first-child {
+  padding-top: 20px;
+  height: 80px;
+}
+/* line 29, ../sass/custom.scss */
+body header #logo img:last-child {
+  width: 200px;
+  padding-bottom: 22px;
+}
+/* line 35, ../sass/custom.scss */
+body header nav {
+  height: 30px;
+  width: 500px;
+  padding: 50px 0 50px 0;
+  float: left;
+  font-family: Arial;
+  font-size: 1.5em;
+}
+/* line 41, ../sass/custom.scss */
+body header nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+/* line 45, ../sass/custom.scss */
+body header nav ul li {
+  display: inline;
 }
 /* line 46, ../sass/custom.scss */
-#body-right #body-right-content img {
-  max-width: 100%;
-  height: auto;
-  display: block;
+body header nav ul li .active {
+  background-color: #ffffff;
+  color: #1a2c4d;
 }
 /* line 51, ../sass/custom.scss */
-#body-right #body-right-content #image1b {
+body header nav ul li a {
+  color: #ffffff;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+/* line 52, ../sass/custom.scss */
+body header nav ul li a:hover {
+  background-color: #ffffff;
+  color: #1a2c4d;
+}
+/* line 63, ../sass/custom.scss */
+body header #searchbar {
+  height: 100%;
+  width: 100px;
+  float: right;
+      /*input{
+        @include nav-color(transparent,white);
+        @include set-size(25px,180px );
+        margin: 2px 8px 0 4px;
+        border: none;
+        border-radius:25px;
+        padding-left: 3px;
+
+        &:focus{
+          outline:none;
+        }
+
+      }*/
+}
+/* line 84, ../sass/custom.scss */
+body header #searchbar img {
+  height: 50px;
+  width: 50px;
+  padding-top: 30px;
+  position: absolute;
+}
+/* line 88, ../sass/custom.scss */
+body header #searchbar img:hover {
+  cursor: pointer;
+}
+/* line 97, ../sass/custom.scss */
+body #mainbodywrapper {
+  display: block;
+  margin-top: 3em;
+  /************BODY LEFT*************/
+  /************BODY RIGHT*************/
+}
+/* line 101, ../sass/custom.scss */
+body #mainbodywrapper #body-left {
+  display: inline-block;
+  width: 64%;
+  border-right: 2px solid #9a9a9a;
+  font-size: 25px;
+  font-weight: normal;
+  color: #4b4b4b;
+  vertical-align: top;
+}
+/* line 115, ../sass/custom.scss */
+body #mainbodywrapper #body-left #form-wrapper .body-left-form-title {
+  display: block;
+  color: #1a2c4d;
+  font-size: 1.5em;
+  text-align: center;
+  margin-bottom: 1em;
+  font-weight: bold;
+}
+/* line 125, ../sass/custom.scss */
+body #mainbodywrapper #body-left #form-wrapper .input-section {
+  margin-left: 5.3em;
+  margin-right: 5em;
+  margin-bottom: 1em;
+  display: block;
+  /*INPUT RADIO*/
+  /*INPUT TEXT*/
+  /*INPUT SUBMIT*/
+}
+/* line 133, ../sass/custom.scss */
+body #mainbodywrapper #body-left #form-wrapper .input-section input[type="radio"] {
+  display: none;
+}
+/* line 137, ../sass/custom.scss */
+body #mainbodywrapper #body-left #form-wrapper .input-section input[type="radio"] + label {
+  display: inline-block;
+  width: 80px;
+  height: 35px;
+  border: 2px solid #0176d2;
+  margin: 5px;
+  color: #0176d2;
+  border-radius: 35px;
+}
+/* line 145, ../sass/custom.scss */
+body #mainbodywrapper #body-left #form-wrapper .input-section input[type="radio"] + label > span {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  border: 2px solid #0176d2;
+  border-radius: 15px;
+  margin: 8px 10px 0 5px;
+}
+/* line 153, ../sass/custom.scss */
+body #mainbodywrapper #body-left #form-wrapper .input-section input[type="radio"] + label > span > span {
+  display: block;
+  background: #0176d2;
+  width: 11px;
+  height: 11px;
+  border-radius: 11px;
+  margin: 2px;
+}
+/* line 163, ../sass/custom.scss */
+body #mainbodywrapper #body-left #form-wrapper .input-section input[type="radio"] + label:hover {
+  cursor: pointer;
+}
+/* line 169, ../sass/custom.scss */
+body #mainbodywrapper #body-left #form-wrapper .input-section input[type="radio"]:checked + label {
+  background: #0176d2;
+  color: white;
+}
+/* line 173, ../sass/custom.scss */
+body #mainbodywrapper #body-left #form-wrapper .input-section input[type="radio"]:checked + label > span {
+  background: #0176d2;
+  border-color: white;
+}
+/* line 177, ../sass/custom.scss */
+body #mainbodywrapper #body-left #form-wrapper .input-section input[type="radio"]:checked + label > span > span {
+  background: white;
+}
+/* line 185, ../sass/custom.scss */
+body #mainbodywrapper #body-left #form-wrapper .input-section input[type="email"] {
+  display: inline-block;
+  padding-left: 10px;
+  font-size: 25px;
+  width: 100%;
+  border: 2px solid #0176d2;
+  border-radius: 25px;
+  color: #0176d2;
+}
+/* line 194, ../sass/custom.scss */
+body #mainbodywrapper #body-left #form-wrapper .input-section input[type="email"]:focus {
+  outline: none;
+}
+/* line 198, ../sass/custom.scss */
+body #mainbodywrapper #body-left #form-wrapper .input-section input[type="text"] {
+  display: inline-block;
+  padding-left: 10px;
+  font-size: 25px;
+  width: 100%;
+  border: 2px solid #0176d2;
+  border-radius: 25px;
+  color: #0176d2;
+}
+/* line 207, ../sass/custom.scss */
+body #mainbodywrapper #body-left #form-wrapper .input-section input[type="text"]:focus {
+  outline: none;
+}
+/* line 213, ../sass/custom.scss */
+body #mainbodywrapper #body-left #form-wrapper .input-section input[type="submit"] {
+  background: #1a2c4d;
+  padding: 5px;
+  font-size: 25px;
+  width: 100%;
+  border: 2px solid #1a2c4d;
+  border-radius: 25px;
+  color: white;
+  outline: none;
+}
+/* line 225, ../sass/custom.scss */
+body #mainbodywrapper #body-left #form-wrapper .input-section input[type="submit"]:hover {
+  border-color: #141d38;
+  background: #141d38;
+  color: #dcdcdc;
+  cursor: pointer;
+}
+/* line 233, ../sass/custom.scss */
+body #mainbodywrapper #body-left #form-wrapper .input-section .error {
+  color: red;
+  font-size: .7em;
+}
+/* line 242, ../sass/custom.scss */
+body #mainbodywrapper #body-right {
+  display: inline-block;
+  width: 18%;
+  padding-left: 1.2em;
+  vertical-align: top;
+}
+/* line 248, ../sass/custom.scss */
+body #mainbodywrapper #body-right #body-right-form-title {
+  display: block;
+  color: #1a2c4d;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+/* line 254, ../sass/custom.scss */
+body #mainbodywrapper #body-right .blue-line {
+  width: 100%;
+  height: 12px;
+  background-color: #0176d2;
+  margin: 1em 0;
+}
+/* line 260, ../sass/custom.scss */
+body #mainbodywrapper #body-right #first-image-container {
   position: relative;
   width: 100%;
 }
-/* line 55, ../sass/custom.scss */
-#body-right #body-right-content #image1c {
+/* line 264, ../sass/custom.scss */
+body #mainbodywrapper #body-right #second-image-container {
   position: relative;
   width: 100%;
+}
+/* line 268, ../sass/custom.scss */
+body #mainbodywrapper #body-right .image {
+  width: inherit;
+}
+/* line 271, ../sass/custom.scss */
+body #mainbodywrapper #body-right .darkenImage {
+  width: inherit;
+  background-color: #5f5f5f;
+  opacity: 0.55;
+  position: absolute;
+  top: 0;
+  bottom: 2%;
+}
+/* line 279, ../sass/custom.scss */
+body #mainbodywrapper #body-right .textInsideImage {
+  color: white;
+  font-size: 1.4em;
+  text-align: center;
+  position: absolute;
+  top: 20%;
+}
+/* line 286, ../sass/custom.scss */
+body #mainbodywrapper #body-right .textReadMore {
+  height: 10%;
+  width: 45%;
+  background-color: rgba(1, 118, 210, 0.4);
+  position: absolute;
+  bottom: 2%;
+  left: 0;
+  color: #ffffff;
+  font-size: 0.7em;
+  text-align: center;
+  padding: 3% 0;
+}
+/* line 298, ../sass/custom.scss */
+body #mainbodywrapper #body-right .textReadMore:hover {
+  display: none;
+}
+/* line 301, ../sass/custom.scss */
+body #mainbodywrapper #body-right .textBelowImage {
+  margin: 0.5em 0;
+  font-size: 1.2em;
+  color: #4b4b4b;
+}
+/* line 309, ../sass/custom.scss */
+body footer {
+  width: 100%;
+  height: 180px;
+  padding-top: 50px;
+  margin: 0;
+  font-family: verdana;
+}
+/* line 316, ../sass/custom.scss */
+body footer #fixedwidth {
+  width: 80%;
+  height: 100%;
+  margin: 0 auto;
+}
+/* line 322, ../sass/custom.scss */
+body footer #fixedwidth ul:not(last-child) {
+  width: 100px;
+  height: 100px;
+  float: left;
+  margin: 15px;
+}
+/* line 329, ../sass/custom.scss */
+body footer #fixedwidth ul:not(last-child) .footerStrong {
+  padding-bottom: 6px;
+  border-bottom: 2px solid #3E88D4;
+}
+/* line 335, ../sass/custom.scss */
+body footer #fixedwidth ul:not(last-child) li {
+  List-style: none;
+  font-size: 1.1em;
+  color: #1a2c4d;
+}
+/* line 348, ../sass/custom.scss */
+body footer #fixedwidth ul:last-child {
+  font-size: 1.1em;
+  width: 100px;
+  height: 100px;
+  float: left;
+  margin: 15px;
+}
+/* line 356, ../sass/custom.scss */
+body footer #fixedwidth ul:last-child .circle {
+  width: 30px;
+  height: 30px;
+  border-radius: 15px;
+  margin: 15px;
+  background-color: #0176d2;
+  color: #181818;
+}
+
+/* ----ADDED SOME MEDIA STYLING HERE-----*/
+@media screen and (max-width: 1064px) {
+  /* line 379, ../sass/custom.scss */
+  body #mainbodywrapper #body-right .textInsideImage {
+    font-size: 1.2em;
+    top: 10%;
+  }
+}
+@media screen and (max-width: 500px) {
+  /* line 390, ../sass/custom.scss */
+  body #mainbodywrapper {
+    display: block;
+    /* ----ADDED SOME MEDIA STYLING HERE-----*/
+  }
+  /* line 393, ../sass/custom.scss */
+  body #mainbodywrapper #body-left {
+    display: block;
+    width: 100%;
+    border: none;
+  }
+  /* line 399, ../sass/custom.scss */
+  body #mainbodywrapper #body-left #form-wrapper .input-section {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  /* line 406, ../sass/custom.scss */
+  body #mainbodywrapper #body-right {
+    display: block;
+    width: 100%;
+    border: none;
+    border-top: 2px solid #9a9a9a;
+  }
+  /* line 411, ../sass/custom.scss */
+  body #mainbodywrapper #body-right #body-right-form-title {
+    margin-top: 1em;
+    font-size: 2.6em;
+    font-weight: bold;
+  }
+  /* line 416, ../sass/custom.scss */
+  body #mainbodywrapper #body-right .textInsideImage {
+    font-size: 2.2em;
+    top: 20%;
+  }
+  /* line 420, ../sass/custom.scss */
+  body #mainbodywrapper #body-right .textBelowImage {
+    font-size: 1.8em;
+  }
+  /* line 423, ../sass/custom.scss */
+  body #mainbodywrapper #body-right .textReadMore {
+    font-size: 1.2em;
+  }
 }

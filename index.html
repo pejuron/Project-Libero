@@ -2,38 +2,204 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Libero</title>
-    <link rel="stylesheet" type="text/css" href="stylesheets/custom.css" />
+    <title>LIBERO</title>
+    <link href="stylesheets/custom.css" type="text/css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
+<!--<div style="background-color: #3E88D4;width:100%;height: auto;padding:10px;">
+    <center>
+        <div id="audioField">
+            <audio controls id="myAudio">
+                &lt;!&ndash;<source src="horse.ogg" type="audio/ogg">&ndash;&gt;
+                &lt;!&ndash;<source src="audio/Evil Laugh-SoundBible.com-874992221.mp3" type="audio/mpeg">&ndash;&gt;
+                <source src="audio/Evil Laugh-SoundBible.com-874992221.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+            <select id="audioList">
+                <option value="Evil Laugh-SoundBible.com-874992221.mp3">Evil laugh</option>
+                <option value="Yahoo-SoundBible.com-1888534056.mp3">Yahoo</option>
+                <option value="Whistle At Girl-SoundBible.com-995063362.mp3">Whistle</option>
+            </select>
+            <button class="audio" _f="play"  id="playBtn">Play</button>
+            <button class="audio" _f="stop"  id="stopBtn">Stop</button>
+        </div>
 
-<body>
-   <div id ="body-right">
-       <div class = "vr"></div>
+        <br/>
+        <br/>
 
-       <div id = "body-right-content">
-           <h3>Phasellus augue sapien</h3>
-           <p class="blue-line"></p>
-            <div id = "image1b">
-                <img src="images/1b.jpeg" alt=""/>
-                <div class = "backOpacity"></div>
-                    <p class = "textInsideImage">Vestibulum sit amet tempor orci</p>
-                    <p class = "textReadMore"><a href="">Read more >></a></p>
+        <div id="videoField">
+            <video id="myVideo" width="400">
+                <source src="video/bbb_sunflower_1080p_60fps_normal.mp4" type="video/mp4">
+                &lt;!&ndash;<source src="mov_bbb.ogg" type="video/ogg">&ndash;&gt;
+                Your browser does not support HTML5 video.
+            </video>
+            <br/>
+            <button class="video" _f="play" id="playBtnVid">Play</button>
+            <button class="video" _f="stop" id="stopBtnVid">Stop</button>
+        </div>
+        <br/><br/>
+        <div id="test">
+
+            <div class="formholder">
+
+                <form action="/page" method="get" id="myForm">
+
+                    <label for="email">Email : </label><input id="email" name="email" type="text">
+                    <br/>
+                    <input type="submit" id="mySubmitajax" value="Get Data by Ajax">&nbsp<input type="submit" id="mySubmitwebworker" value="Get Data by Web Workers">
+                </form>
+
             </div>
-            <p class ="textBelowImage">
-                Phasellus augue sapien, aliquam sit amet mauris
-            </p>
+            <br/>
+            <label for="postcode">Postcode : </label><input id="postcode" name="postcode" type="text" disabled="">
+            <br/>
+            <label for="mobilenum">Mobiel# : </label><input id="mobilenum" name="mobilenum" type="text" disabled="">
+            <br/>
+            <label for="enforce">Start Enforcing : </label><input id="enforce" name="enforce" type="text" disabled="">
+            <br/>
+        </div>
+    </center>
+</div>-->
+<body>
+<header>
+    <div id="logo"><img src="Images/hamburger.png" alt="Libero Logo"/><img src="Images/libero.png" alt="Libero text"/></div>
+    <nav>
+        <ul>
+            <li><a class="active" href="">HOME</a></li>
+            <li><a href="">NEWS</a></li>
+            <li><a href="">EVENT</a></li>
+            <li><a href="">WORLD</a></li>
+        </ul>
+    </nav>
 
-           <p class = "blue-line"></p>
-           <div id = "image1c">
-                <img src="images/1c.jpeg" alt=""/>
-                <div class = "backOpacity"></div>
-                <p class = "textInsideImage">Integere consectetur orci ligula</p>
-                <p class = "textReadMore"><a href="">Read more >></a></p>
-           </div>
-           <p class ="textBelowImage">
-               Sed facilisis volutpat turpis eu viverra
-           </p>
-       </div>
+    <!--<div id="searchbar"><input type="text" name="search" ><img src="Images/search%20button.png" alt="searchbutton"></div>-->
+    <div id="searchbar"><img src="images/search%20button.png" alt="searchbutton"></div>
+</header>
+<div style="clear:both;"></div>
+
+<div id="mainbodywrapper">
+
+<div id="body-left">
+    <div id="form-wrapper">
+        <form name="mainForm" action="">
+            <div class="body-left-form-title">How do you feel about recycling?</div>
+
+            <div class="input-section">
+                <label for="postcode">Postcode: </label>
+                <br/>
+                <input type="text" id="postcode" style="width:5em;" maxlength="4" ondrop="return false;" onpaste="return false;"
+                       onfocus="return isSelected();" onblur="return checkPostCodeLength();" onkeypress="return IsDigit(event);"  >
+                <span class = "error" id ="error1"></span>
+            </div>
+
+            <div class="input-section">
+                <div>Should the government start enforcing garbage separation and recycling schemes across your area?</div>
+                <input type="radio" id="rad1" value="yes" name="rsenforce"><label for="rad1"><span><span></span></span>Yes</label>
+                <input type="radio" id="rad2" value="no" name="rsenforce"><label for="rad2"><span><span></span></span>No</label>
+            </div>
+
+            <div class="input-section">
+                <label for="email">E-mail Address:</label>
+                <br/>
+                <input type="text" id="email" style="width:10em;">
+                <span class = "error" id ="error2"></span>
+            </div>
+
+            <div class="input-section ">
+                <label for="mobile">Mobile Number:</label>
+                <br/>
+                <input type="text" id="mobile" style="width:10em;">
+                <span class = "error" id ="error3"></span>
+            </div>
+
+            <div class="input-section" style="float:right;">
+                <input type="submit" value="Submit" style="width:5em;">
+            </div>
+            <div style="clear:both;"></div>
+        </form>
+
     </div>
+</div>
+
+<div id ="body-right">
+    <div id= "body-right-form-title">Phasellus augue sapien</div>
+    <div class= "blue-line"></div>
+    <div id = "first-image-container">
+        <img class= "image" src="images/1b.jpeg" alt="clean city"/>
+        <div class = "darkenImage"></div>
+        <div class = "textInsideImage">Vestibulum sit amet tempor orci</div>
+        <a href = "#">
+            <div class = "textReadMore">Read more >></div>
+        </a>
+    </div>
+    <div class = "textBelowImage">
+        Phasellus augue sapien, aliquam sit amet mauris
+    </div>
+
+    <div class = "blue-line"></div>
+    <div id = "second-image-container">
+        <img class = "image" src="images/1c.jpeg" alt="clean city"/>
+        <div class = "darkenImage"></div>
+        <div class = "textInsideImage">Integere consectetur orci ligula</div>
+        <a href = "#">
+            <div class = "textReadMore">Read more >></div>
+        </a>
+    </div>
+
+    <div class = "textBelowImage">
+        Sed facilisis volutpat turpis eu viverra
+    </div>
+</div>
+
+</div>
+
+<footer>
+    <hr/>
+    <div id="fixedwidth">
+        <ul>
+            <li class="footerStrong"><strong>Rutrum</strong></li>
+            <br/>
+            <li>Fermentum</li>
+            <li>Neque</li>
+            <li>Consequat</li>
+        </ul>
+
+        <ul>
+            <li class="footerStrong"><strong>Malesuada</strong></li>
+            <br/>
+            <li>Tellus</li>
+            <li>Condimentum</li>
+            <li>Consectetur</li>
+        </ul>
+
+        <ul>
+            <li class="footerStrong"><strong>Pellentesque</strong></li>
+            <br/>
+            <li>Habitant</li>
+            <li>Morbi</li>
+            <li>Tristique</li>
+        </ul>
+
+        <ul>
+            <li class="footerStrong"><strong>Quisque</strong></li>
+            <br/>
+            <li>Pharetra</li>
+            <li>Volutpat</li>
+            <li>Tristique</li>
+        </ul>
+
+        <!--<div id="speciallist">-->
+            <ul>
+                <li class="circle">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>Phasellus</strong></li>
+                <li class="circle">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>Augue</strong></li>
+                <li class="circle">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>Sapien</strong></li>
+            </ul>
+        <!--</div>-->
+    </div>
+</footer>
+
+<script src="js/jquery-1.9.js"></script>
+<script src="js/validator.js"></script>
+<script src="js/custom.js"></script>
 </body>
 </html>
